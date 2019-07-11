@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23928796109165904}
   - component: {fileID: 54734789677666726}
   - component: {fileID: 135842341496549612}
+  - component: {fileID: 114697223425673020}
   m_Layer: 0
   m_Name: SoccerBall
   m_TagString: Untagged
@@ -101,6 +102,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114697223425673020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460402446674524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a5cf80f1b44ad4dacd5918243c7e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135842341496549612
 SphereCollider:
   m_ObjectHideFlags: 1
