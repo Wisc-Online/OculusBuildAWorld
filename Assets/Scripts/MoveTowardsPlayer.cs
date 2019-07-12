@@ -30,14 +30,12 @@ public class MoveTowardsPlayer : MonoBehaviour
         //Calculate distance between player
         float distance = Vector3.Distance(transform.position, player.position);
         //If the distance is smaller than the walkingDistance
-        if (distance < walkingDistance)
-        {
-            //Move the enemy towards the player with smoothdamp
+  
             transform.position = Vector3.SmoothDamp(transform.position, player.position, ref smoothVelocity, smoothTime);
+        transform.position = new Vector3(transform.position.x, 0.0f,transform.position.z);
 
 
-        }
-        else if (distance < attackdistance)
+        if (distance < attackdistance)
         {
             animator.SetBool("ZombieisClose", true);
         }
